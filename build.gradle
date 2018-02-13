@@ -1,0 +1,23 @@
+plugins {
+  id 'java'
+  id 'application'
+  id 'com.github.johnrengelman.shadow' version '1.2.4'
+}
+
+mainClassName = 'spotify.bot.SpotifyBot'
+
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'net.dv8tion:JDA:3.5.0_332'
+  compile 'com.sedmelluq:lavaplayer-loopback:1.0.3'
+  compile 'com.sedmelluq:lavaplayer:1.2.36'
+}
+
+compileJava.options.encoding = 'UTF-8'
